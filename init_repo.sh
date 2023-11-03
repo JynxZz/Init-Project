@@ -128,9 +128,9 @@ function create_classic_repo() {
 
   echo "Setting up a classic repository structure..."
 
-  # Copy .gitignore and requirements.txt from the boilerplate
-  cp "${BOILERPLATE_PATH}/.gitignore" .gitignore
-  cp "${BOILERPLATE_PATH}/mini_requirements.txt" requirements.txt
+  # Copy .gitignore and requirements.txt from the boilerplate path
+  cp "${BOILERPLATE_PATH}/files/gitignore" .gitignore
+  cp "${BOILERPLATE_PATH}/files/mini_requirements.txt" requirements.txt
 
   # Create and fill the Readme.md file
   echo "# Readme for $repo_name" > Readme.md
