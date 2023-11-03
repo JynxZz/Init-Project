@@ -1,8 +1,8 @@
-# Documentation : `init_project_repo.sh`
+# Documentation : `init_repo.sh`
 
 ## Overview
 
-`init_project_repo.sh` is a bash script for automating the initialization of a new Git repository.
+`init_repo.sh` is a bash script for automating the initialization of a new Git repository.
 
 It facilitates creating a repository with a selected structure, setting up a Python virtual environment, and pushing the initialized repository to GitHub. The script interacts with users via the command line to collect necessary details and preferences for the repository setup.
 
@@ -26,19 +26,20 @@ It facilitates creating a repository with a selected structure, setting up a Pyt
     2. Be sure to explain well the process for the copy and aliases
 - Consolidate and reformat some redundant functions
 
+Link to the [WIP Notes](wip.md)
 
 ## Usage
 
 To use the script, run the following command in your terminal:
 
 ```bash
-bash ./init_project_repo.sh
+bash ./init_repo.sh
 ```
 
 You can alias it like this :
 
 ```bash
-alias initrepo="bash ~/path/to/the/init_project_repo.sh"
+alias initrepo="bash ~/path/to/the/init_repo.sh"
 ```
 
 ## Requirements
@@ -71,13 +72,13 @@ The script requires the following tools to be installed:
 3. Give the script execute permissions:
 
     ```bash
-    chmod +x init_project_repo.sh
+    chmod +x init_repo.sh
     ```
 
 4. Run the script:
 
     ```bash
-    ./init_project_repo.sh
+    ./init_repo.sh
     ```
 
 5. Follow the interactive prompts to complete the setup.
