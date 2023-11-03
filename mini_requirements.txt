@@ -1,0 +1,13 @@
+## USUAL REQUIREMENTS
+pytest
+pylint
+ipdb
+jupyter
+jupyterlab
+numpy
+pandas
+matplotlib
+seaborn
+
+## PROJECT REQUIREMENTS
+# scikit-learn
