@@ -21,8 +21,11 @@ It facilitates creating a repository with a selected structure, setting up a Pyt
 
 - Using the `select` method to create an interactive menu
 - Creating tests (possibly using BATS)
-- Completing the documentation (Check ✅ ?)
+- Completing the documentation (Check ✅ ?):
+    1. Complete the `How to Run`
+    2. Be sure to explain well the process for the copy and aliases
 - Consolidate and reformat some redundant functions
+
 
 ## Usage
 
