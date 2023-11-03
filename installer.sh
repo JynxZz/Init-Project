@@ -59,7 +59,7 @@ chmod +x ${BOILERPLATE_PATH}/init_repo.sh
 echo -e "\n${blue}****************************$clear"
 echo "Creating aliases ..."
 
-echo 'alias initrepo="bash ${BOILERPLATE_PATH}/init_repo.sh"' >> ~/.aliases
+echo "alias initrepo="bash ${BOILERPLATE_PATH}/init_repo.sh"" >> ~/.aliases
 
 echo -e "\n${blue}****************************$clear"
 echo "👌 Awesome, all set up!! 👌"
