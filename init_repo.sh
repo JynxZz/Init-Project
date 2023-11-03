@@ -14,6 +14,7 @@
 # - v1.0.0 Initial release
 # - v1.1.0 Added virtual environment setup
 # - v1.2.0 Improved user prompts and error handling
+# - v1.3.0 Installer to be more easy to use
 
 # WIP:
 # - Using select method to make a interactive menu

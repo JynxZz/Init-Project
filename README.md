@@ -16,6 +16,7 @@ It facilitates creating a repository with a selected structure, setting up a Pyt
 - **v1.0.0:** Initial release
 - **v1.1.0:** Added virtual environment setup
 - **v1.2.0:** Improved user prompts and error handling
+- **v1.3.0:** Add a installer to be more easy to use
 
 ## Work In Progress
 
@@ -28,20 +29,6 @@ It facilitates creating a repository with a selected structure, setting up a Pyt
 
 Link to the [WIP Notes](wip.md)
 
-## Usage
-
-To use the script, run the following command in your terminal:
-
-```bash
-bash ./init_repo.sh
-```
-
-You can alias it like this :
-
-```bash
-alias initrepo="bash ~/path/to/the/init_repo.sh"
-```
-
 ## Requirements
 
 The script requires the following tools to be installed:
@@ -50,6 +37,23 @@ The script requires the following tools to be installed:
 - gh (GitHub CLI)
 - direnv
 - git
+
+## How to install
+
+To use the script, run the following command in your terminal to install localy
+
+```bash
+curl "https://raw.githubusercontent.com/JynxZz/Init-Project/main/installer.sh" | bash
+```
+
+## How to Run It
+
+Just use in the directory you wann start a new project the alias
+
+```bash
+cd <path/to/your/future/project>
+initrepo
+```
 
 ## Features
 
@@ -64,24 +68,6 @@ The script requires the following tools to be installed:
 - Optional installation of Python packages from requirements.txt
 - Option to push the initial commit to GitHub
 - Option to open the repository in a web view using GitHub CLI
-
-## How to Run
-
-1. Ensure all prerequisites are installed.
-2. Clone the script or copy it to your local machine.
-3. Give the script execute permissions:
-
-    ```bash
-    chmod +x init_repo.sh
-    ```
-
-4. Run the script:
-
-    ```bash
-    ./init_repo.sh
-    ```
-
-5. Follow the interactive prompts to complete the setup.
 
 ## Functions
 
