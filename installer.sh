@@ -23,8 +23,12 @@ for tool in "${required_tools[@]}"; do
     echo -e "${red}Error: $tool is not installed.${clear}"
     echo "Please install $tool to continue."
   fi
+done
+for tool in "${required_tools[@]}"; do
+  if ! command -v "$tool" &> /dev/null; then
   echo -e "\n${red}Exit Install${clear}"
   exit 1
+  fi
 done
 
 echo -e "\n${blue}****************************$clear"
