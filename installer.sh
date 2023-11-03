@@ -17,6 +17,11 @@ BOILERPLATE_PATH="${BOILERPLATE_PATH:-$HOME/.boilerplate}"
 # Validate required tools
 # pyenv gh direnv git
 ##
+echo -e "\n${blue}****************************$clear"
+echo "Checking required tools ..."
+
+#TODO: Install required tools depending to the OS
+
 required_tools=("pyenv" "gh" "direnv" "git")
 for tool in "${required_tools[@]}"; do
   if ! command -v "$tool" &> /dev/null; then
@@ -32,17 +37,11 @@ for tool in "${required_tools[@]}"; do
 done
 
 echo -e "\n${blue}****************************$clear"
-echo "Check and create ..."
+echo "Checking directory and create it ..."
 
 if [ ! -d ${BOILERPLATE_PATH} ]; then
   mkdir ${BOILERPLATE_PATH}
 fi
-
-echo -e "\n${blue}****************************$clear"
-echo "Checking required tools ..."
-
-
-#TODO: Install required tools depending to the OS
 
 
 echo -e "\n${blue}****************************$clear"
@@ -56,10 +55,15 @@ echo "Giving execute permissions ..."
 
 chmod +x ${BOILERPLATE_PATH}/init_repo.sh
 
+
 echo -e "\n${blue}****************************$clear"
 echo "Creating aliases ..."
 
-echo "alias initrepo="bash ${BOILERPLATE_PATH}/init_repo.sh"" >> ~/.aliases
+echo "# ----------------------" >> ~/.aliases
+echo "# Alias for Init Repo" >> ~/.aliases
+echo "# ----------------------" >> ~/.aliases
+echo -e "alias init_repo="bash $BOILERPLATE_PATH/init_repo.sh"" >> ~/.aliases
+
 
 echo -e "\n${blue}****************************$clear"
 echo "👌 Awesome, all set up!! 👌"
