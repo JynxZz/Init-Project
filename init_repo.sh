@@ -86,13 +86,13 @@ function initiate_repo_creation() {
 
   # Check the privacy of the repo
   echo -e "\nShould the repository be private or public?"
-  echo "[1] Private [2] Public"
+  echo "$green[1]$clearn Private $green[2]$clear Public"
   privacy=$(prompt "Select an option" "^[12]$" "Invalid choice, please choose 1 or 2.")
 
   if [[ $privacy == 1 ]]; then
-    echo -e "Creating a new repository named $green$repo_name$clear in $green private$clear mode."
+    echo -e "Creating a new repository named $green$repo_name$clear in$green private$clear mode."
   else
-    echo -e "Creating a new repository named $green$repo_name$clear in $green public$clear mode."
+    echo -e "Creating a new repository named $green$repo_name$clear in$green public$clear mode."
   fi
 
   choose_repo_type
@@ -105,7 +105,7 @@ function initiate_repo_creation() {
 function choose_repo_type() {
   echo -e "\n$blue####################$clear"
   echo "Would you like a classic repository or a project structure?"
-  echo "[1] Classic [2] Project"
+  echo "$green[1]$clear Classic $green[2]$clear Project"
 
   local repo_type_choice
   repo_type_choice=$(prompt "Select an option" "^[12]$" "Invalid choice, please choose 1 or 2.")
@@ -139,7 +139,7 @@ function create_classic_repo() {
   # Initialize the git repository and make the first commit
   git init -b main
   git add .
-  git commit --message "Initial commit & setup repository"
+  git commit --message "Initial commit & Setup repository"
 
   # Create the GitHub repository
   if [[ $privacy == 1 ]]; then
@@ -148,7 +148,7 @@ function create_classic_repo() {
     gh repo create "$repo_name" --public --source=. --remote=origin
   fi
 
-  echo -e "\n👌 Awesome, all set up!!"
+  echo -e "\n👌 Awesome, all set up!! 👌"
 
   create_virtual_env
 }
@@ -185,7 +185,7 @@ function create_project_repo() {
     gh repo create "$repo_name" --public --source=. --remote=origin
   fi
 
-  echo -e "\n👌 Awesome, all set up!!"
+  echo -e "\n👌 Awesome, all set up!! 👌"
 
   create_virtual_env
 }
@@ -231,7 +231,7 @@ function setup_virtual_env() {
   # Extracting the selected Python version
   local selected_version=${python_versions[$((version_choice-1))]}
 
-  echo "Creating the $env_name with Python version $selected_version"
+  echo "Creating the $green$env_name$clear with Python version $green$selected_version$clear 🐍"
   pyenv virtualenv "$selected_version" "$env_name"
 
   echo -e "\nSetting up the new Virtual Environment locally..."

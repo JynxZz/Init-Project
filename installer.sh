@@ -62,7 +62,7 @@ echo "Creating aliases ..."
 echo "# ----------------------" >> ~/.aliases
 echo "# Alias for Init Repo" >> ~/.aliases
 echo "# ----------------------" >> ~/.aliases
-echo -e 'alias init_repo="bash ~/.boilerplate/init_repo.sh"' >> ~/.aliases
+echo -e 'alias init_repo="bash ~/.boilerplate/initrepo.sh"' >> ~/.aliases
 
 
 echo -e "\n${blue}****************************$clear"
