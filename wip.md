@@ -18,3 +18,15 @@ else
 
 fi
 ```
+
+- pyenv for linux
+- what to do for Win users ?
+
+## Modification of the README
+
+1. Modifiaction of few parts of the doc
+    - Change `Usage` to `How to Install` -> Create the command to install it
+    - Change `How to Run` and explain the alias create during the setup
+2. Rearrange block order
+3. Be more explicit for the usage
+    - It's just for python right now
