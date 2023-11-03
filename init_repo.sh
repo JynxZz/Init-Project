@@ -30,7 +30,7 @@ blue='\e[34m'
 clear='\e[0m'
 
 # Default boilerplate path
-BOILERPLATE_PATH="${BOILERPLATE_PATH:-$HOME/developer/boilerplate}"
+BOILERPLATE_PATH="${BOILERPLATE_PATH:-$HOME/.boilerplate}"
 
 # Set IFS to default value
 IFS=$' \t\n'
