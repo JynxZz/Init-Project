@@ -109,8 +109,17 @@ function create_alias() {
   fi
 }
 
+# Last Output
+function finish_setup() {
+  echo -e "\n${blue}****************************$clear"
+  echo "👌 Awesome, all set up!! 👌"
+  echo "Your can now using the alias ${blue}init_repo${clear} inside the directory where init the new project !"
+  echo -e "${blue}****************************$clear"
+}
+
 # Executing the sheel
 function exec_shell() {
+  echo -e "\n${blue}****************************$clear"
   if [[ "$SHELL" == */bash ]]; then
     echo "You are using bash. Executing bash..."
     exec bash
@@ -122,14 +131,6 @@ function exec_shell() {
   fi
 }
 
-# Last Output
-function finish_setup() {
-  echo -e "\n${blue}****************************$clear"
-  echo "👌 Awesome, all set up!! 👌"
-  echo "Your can now using the alias ${blue}init_repo${clear} inside the directory where init the new project !"
-  echo -e "${blue}****************************$clear"
-}
-
 ##
 # Execution the script
 ##
@@ -137,5 +138,5 @@ check_required_tools
 setup_repository
 set_permissions
 create_alias
-exec_shell
 finish_setup
+exec_shell
