@@ -113,7 +113,7 @@ function create_alias() {
 function finish_setup() {
   echo -e "\n${blue}****************************$clear"
   echo "👌 Awesome, all set up!! 👌"
-  echo "Your can now using the alias ${blue}init_repo${clear} inside the directory where init the new project !"
+  echo -e "Your can now using the alias ${blue}init_repo${clear} inside the directory where init the new project !"
   echo -e "${blue}****************************$clear"
 }
 
