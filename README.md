@@ -53,7 +53,7 @@ Just use in the directory you wann start a new project the alias
 
 ```bash
 cd <path/to/your/future/project>
-initrepo
+init_repo
 ```
 
 ## Features
