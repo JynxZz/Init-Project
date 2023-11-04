@@ -120,6 +120,8 @@ function finish_setup() {
 # Executing the sheel
 function exec_shell() {
   echo -e "\n${blue}****************************$clear"
+  source ~/.aliases
+
   if [[ "$SHELL" == */bash ]]; then
     echo "You are using bash. Executing bash..."
     exec bash
