@@ -103,7 +103,7 @@ function create_alias() {
     echo "# ----------------------" >> ~/.aliases
     echo "# Alias for Init Repo" >> ~/.aliases
     echo "# ----------------------" >> ~/.aliases
-    echo -e 'alias init_repo="bash ~/.boilerplate/initrepo.sh"' >> ~/.aliases
+    echo -e 'alias init_repo="bash ~/.boilerplate/init_repo.sh"' >> ~/.aliases
   else
     echo "Alias 'init_repo' already exists"
   fi
