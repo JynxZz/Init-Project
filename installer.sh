@@ -50,7 +50,7 @@ function check_required_tools() {
   done
 
   # Check if missing_tool exist & exit
-  if [ "$missing_tool" = true]; then
+  if [ "$missing_tool" = true ]; then
     echo -e "\n${red}Exit Install${clear}"
     exit 1
   fi
@@ -65,10 +65,10 @@ function setup_repository() {
   echo "Setting up the directory & cloning the repo ..."
 
   # Check dirctory exist
-  if [ -d "${BOILERPLATE_PATH}"]; then
+  if [ -d "${BOILERPLATE_PATH}" ]; then
 
     # Update
-    if [ -d "${BOILERPLATE_PATH}/.git"]; then
+    if [ -d "${BOILERPLATE_PATH}/.git" ]; then
       echo "Repository already cloned. Pulling latest changes..."
       git -C "${BOILERPLATE_PATH}" pull
 
