@@ -107,15 +107,26 @@ function create_alias() {
   else
     echo "Alias 'init_repo' already exists"
   fi
-
-  source ~/.aliases
 }
 
+# Executing the sheel
+function exec_shell() {
+  if [[ "$SHELL" == */bash ]]; then
+    echo "You are using bash. Executing bash..."
+    exec bash
+  elif [[ "$SHELL" == */zsh ]]; then
+    echo "You are using zsh. Executing zsh..."
+    exec zsh
+  else
+    echo "You are using an unsupported shell. Please restart your terminal befor using ."
+  fi
+}
 
 # Last Output
 function finish_setup() {
   echo -e "\n${blue}****************************$clear"
   echo "👌 Awesome, all set up!! 👌"
+  echo "Your can now using the alias ${blue}init_repo${clear} inside the directory where init the new project !"
   echo -e "${blue}****************************$clear"
 }
 
@@ -126,4 +137,5 @@ check_required_tools
 setup_repository
 set_permissions
 create_alias
+exec_shell
 finish_setup
