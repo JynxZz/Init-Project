@@ -8,7 +8,6 @@
 # Author: JynxZz
 # Date: Nov 2023
 
-# Usage: bash ./setup_git_repo.sh
 
 # CHANGELOG:
 # - v1.0.0 Initial release

@@ -1,6 +1,19 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Script to setup for the user
+
+# Author: JynxZz
+# Date: Nov 2023
+
+# CHANGELOG:
+# - v1.0.0 Initial release
+
+# WIP:
+# - Refact all in Functions
+# - Check for Cloning or Pulling git
+# - Check for existing alias & source it
+# - Error Handling
+
 
 ##
 # Color  Variables
