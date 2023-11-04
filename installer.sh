@@ -57,9 +57,7 @@ function check_required_tools() {
 }
 
 #TODO: Install required tools depending to the OS
-# function install_required_tools() {
-#
-# }
+
 
 # Creating directory
 function setup_repository() {
