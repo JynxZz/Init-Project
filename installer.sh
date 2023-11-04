@@ -8,6 +8,7 @@
 # CHANGELOG:
 # - v1.0.0 Initial release
 # - v1.1.0 Refactoring in functions
+# - v1.1.1 Correcting & Improving the script
 
 # WIP:
 # - Error Handling
