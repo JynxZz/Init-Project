@@ -17,6 +17,7 @@ It facilitates creating a repository with a selected structure, setting up a Pyt
 - **v1.1.0:** Added virtual environment setup
 - **v1.2.0:** Improved user prompts and error handling
 - **v1.3.0:** Add a installer to be more easy to use
+- **v1.3.1:** New version of the installer
 
 ## Work In Progress
 
