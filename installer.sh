@@ -125,5 +125,5 @@ function finish_setup() {
 check_required_tools
 setup_repository
 set_permissions
-create_aliases
+create_alias
 finish_setup
