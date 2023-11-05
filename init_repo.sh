@@ -88,7 +88,7 @@ function initiate_repo_creation() {
 
   # Check the privacy of the repo
   echo -e "\nShould the repository be private or public?"
-  echo -e "$green[1]$clearn Private $green[2]$clear Public"
+  echo -e "$green[1]$clean Private $green[2]$clear Public"
   privacy=$(prompt "Select an option" "^[12]$" "Invalid choice, please choose 1 or 2.")
 
   if [[ $privacy == 1 ]]; then
