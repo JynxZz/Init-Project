@@ -15,6 +15,7 @@
 # - v1.2.0 Improved user prompts and error handling
 # - v1.3.0 Installer to be more easy to use
 # - v1.3.1 New version of the installer
+# - v1.3.2 Consolidate & error correction
 
 # WIP:
 # - Using select method to make a interactive menu
@@ -87,7 +88,7 @@ function initiate_repo_creation() {
 
   # Check the privacy of the repo
   echo -e "\nShould the repository be private or public?"
-  echo "$green[1]$clearn Private $green[2]$clear Public"
+  echo -e "$green[1]$clearn Private $green[2]$clear Public"
   privacy=$(prompt "Select an option" "^[12]$" "Invalid choice, please choose 1 or 2.")
 
   if [[ $privacy == 1 ]]; then
@@ -106,7 +107,7 @@ function initiate_repo_creation() {
 function choose_repo_type() {
   echo -e "\n$blue####################$clear"
   echo "Would you like a classic repository or a project structure?"
-  echo "$green[1]$clear Classic $green[2]$clear Project"
+  echo -e "$green[1]$clear Classic $green[2]$clear Project"
 
   local repo_type_choice
   repo_type_choice=$(prompt "Select an option" "^[12]$" "Invalid choice, please choose 1 or 2.")
@@ -149,7 +150,7 @@ function create_classic_repo() {
     gh repo create "$repo_name" --public --source=. --remote=origin
   fi
 
-  echo -e "\n👌 Awesome, all set up!! 👌"
+  echo -e "\n👌 ${gree}Awesome, all set up!!{} 👌"
 
   create_virtual_env
 }
