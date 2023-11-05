@@ -70,19 +70,19 @@ function setup_repository() {
 
     # Update
     if [ -d "${BOILERPLATE_PATH}/.git" ]; then
-      echo "Repository already cloned. Pulling latest changes..."
+      echo -e "Repository already cloned. Pulling latest changes...\n"
       git -C "${BOILERPLATE_PATH}" pull
 
     # Refresh
     else
-      echo "Directory exists but is not a Git repository. Cleaning & Cloning..."
+      echo -e "Directory exists but is not a Git repository. Cleaning & Cloning...\n"
       rm -rf "${BOILERPLATE_PATH}"
       git clone https://github.com/JynxZz/Init-Project.git "${BOILERPLATE_PATH}"
     fi
 
   # First Cloning
   else
-    echo "Directory doesn't exist. Cloning the repo..."
+    echo -e "Directory doesn't exist. Cloning the repo...\n"
     git clone https://github.com/JynxZz/Init-Project.git "${BOILERPLATE_PATH}"
   fi
 }
