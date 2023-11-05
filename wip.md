@@ -7,7 +7,6 @@ ___
 Few problemes with the inicode.
 Try to use the flag `-e` to echo for the interpretation of the backslash.
 
-
 ## Install Required Tools
 
 ```bash
