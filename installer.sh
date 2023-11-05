@@ -63,26 +63,26 @@ function check_required_tools() {
 # Creating directory
 function setup_repository() {
   echo -e "\n${blue}****************************$clear"
-  echo "Setting up the directory & cloning the repo ..."
+  echo -e "Setting up the directory & cloning the repo ...\n\n"
 
   # Check dirctory exist
   if [ -d "${BOILERPLATE_PATH}" ]; then
 
     # Update
     if [ -d "${BOILERPLATE_PATH}/.git" ]; then
-      echo -e "Repository already cloned. Pulling latest changes...\n"
+      echo -e "Repository already cloned. Pulling latest changes...\n\n"
       git -C "${BOILERPLATE_PATH}" pull
 
     # Refresh
     else
-      echo -e "Directory exists but is not a Git repository. Cleaning & Cloning...\n"
+      echo -e "Directory exists but is not a Git repository. Cleaning & Cloning...\n\n"
       rm -rf "${BOILERPLATE_PATH}"
       git clone https://github.com/JynxZz/Init-Project.git "${BOILERPLATE_PATH}"
     fi
 
   # First Cloning
   else
-    echo -e "Directory doesn't exist. Cloning the repo...\n"
+    echo -e "Directory doesn't exist. Cloning the repo...\n\n"
     git clone https://github.com/JynxZz/Init-Project.git "${BOILERPLATE_PATH}"
   fi
 }
