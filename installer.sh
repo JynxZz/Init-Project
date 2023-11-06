@@ -57,8 +57,25 @@ function check_required_tools() {
   fi
 }
 
+# WORK IN PROGRESS
 #TODO: Install required tools depending to the OS
+function install_required_tools() {
+  if [[ "$OSTYPE" == "darwin"* ]]; then
+    brew update && brew upgrade
+    brew upgrade git         || brew install git
+    brew upgrade gh          || brew install gh
+    brew upgrade pyenv       || brew install pyenv
+    brew upgrade direnv      || brew install direnv
 
+  elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    sudo apt-get update && sudo apt-get upgrade
+    sudo apt-get update      || sudo apt-get install -y git gh direnv
+    # Need install pyenv nice & clean
+
+  else
+    # Handeling the Windows User ... ?
+  fi
+}
 
 # Creating directory
 function setup_repository() {
