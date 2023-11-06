@@ -150,7 +150,7 @@ function create_classic_repo() {
     gh repo create "$repo_name" --public --source=. --remote=origin
   fi
 
-  echo -e "\n👌 ${gree}Awesome, all set up!!{} 👌"
+  echo -e "\n👌 ${green}Awesome, all set up!!${clean} 👌"
 
   create_virtual_env
 }
@@ -187,7 +187,7 @@ function create_project_repo() {
     gh repo create "$repo_name" --public --source=. --remote=origin
   fi
 
-  echo -e "\n👌 Awesome, all set up!! 👌"
+  echo -e "\n👌 ${green}Awesome, all set up!!${clean} 👌"
 
   create_virtual_env
 }
