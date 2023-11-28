@@ -233,7 +233,7 @@ function setup_virtual_env() {
   # Extracting the selected Python version
   local selected_version=${python_versions[$((version_choice-1))]}
 
-  echo "Creating the $green$env_name$clear with Python version $green$selected_version$clear 🐍"
+  echo -e "Creating the $green$env_name$clear with Python version $green$selected_version$clear 🐍"
   pyenv virtualenv "$selected_version" "$env_name"
 
   echo -e "\nSetting up the new Virtual Environment locally..."
