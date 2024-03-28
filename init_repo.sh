@@ -16,6 +16,7 @@
 # - v1.3.0 Installer to be more easy to use
 # - v1.3.1 New version of the installer
 # - v1.3.2 Consolidate & error correction
+# - v1.3.3 Patch : change structure & files
 
 # WIP:
 # - Using select method to make a interactive menu
@@ -132,7 +133,7 @@ function create_classic_repo() {
 
   # Copy .gitignore and requirements.txt from the boilerplate path
   cp "${BOILERPLATE_PATH}/files/gitignore" .gitignore
-  cp "${BOILERPLATE_PATH}/files/mini_requirements.txt" requirements.txt
+  cp "${BOILERPLATE_PATH}/files/requirements.txt" requirements.txt
 
   # Create and fill the Readme.md file
   echo "# Readme for $repo_name" > Readme.md

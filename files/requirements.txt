@@ -8,6 +8,7 @@ numpy
 pandas
 matplotlib
 seaborn
+black
 
 ## PROJECT REQUIREMENTS
 # scikit-learn
